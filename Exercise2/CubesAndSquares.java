@@ -15,20 +15,3 @@ public static void main (String []args){ // main method
 		}
 	}
    }
-
-
-
-
-/*b)	System.out.printf("%-8d%8s%8.2f", 3432, "Aina", 3.8);
-
-/*int num;
-int square;
-int cube;
-
-System.out.println("Number\tSquare\tCube");
-System.out.printf(""
-for (num=1; num<10; num++){
-
-square = num*num;
-cube = num*square;
-System.out.println(num+"\t"+square+"\t"+cube);*/
