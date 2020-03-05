@@ -6,16 +6,16 @@ String colour,food,animal,nameFriends; //declaring colour,food,animal,name frien
 
 System.out.print("Enter your colour:" );
 colour=scan.nextLine(); //to input data
-System.out.println("colour:"+ colour); 
+System.out.println("colour:"+ colour); //to display input 
 System.out.print("Enter your food:");
-food=scan.nextLine();
-System.out.println("food:"+ food);
+food=scan.nextLine(); //to input data
+System.out.println("food:"+ food); //to display input 
 System.out.print("Enter your animal:");
-animal=scan.nextLine();
-System.out.println("animal:"+ animal);
+animal=scan.nextLine();//to input data
+System.out.println("animal:"+ animal); //to display input 
 System.out.print("Enter your first name of friends:");
-nameFriends=scan.nextLine();
-System.out.println("nameFriends:"+ nameFriends);
+nameFriends=scan.nextLine(); //to input data
+System.out.println("nameFriends:"+ nameFriends); //to display input 
 scan.close();
 
 System.out.print( "I had a dream that" +" "+ nameFriends +" " + "ate a" + " " + colour +" " + animal 
