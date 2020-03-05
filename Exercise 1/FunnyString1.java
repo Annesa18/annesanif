@@ -1,12 +1,12 @@
 import java.util.Scanner;
-public class FunnyString1{
-static Scanner scan = new Scanner(System.in);
-public static void main(String []args){
-String colour,food,animal,nameFriends;
+public class FunnyString1{ //to show class is Funny String
+static Scanner scan = new Scanner(System.in); //using scanner 
+public static void main(String []args){ //main method
+String colour,food,animal,nameFriends; //declaring colour,food,animal,name friends are string
 
 System.out.print("Enter your colour:" );
-colour=scan.nextLine();
-System.out.println("colour:"+ colour);
+colour=scan.nextLine(); //to input data
+System.out.println("colour:"+ colour); 
 System.out.print("Enter your food:");
 food=scan.nextLine();
 System.out.println("food:"+ food);
