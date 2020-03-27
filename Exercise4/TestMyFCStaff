@@ -40,15 +40,7 @@ package testmyfcstaff;
     private String name,staffID;
     private int totalHourWorks;
     private double sales,salary,commission,totalSales;
-
-    /*private MyFCStaff(String name, String staffID, int totalHourWorks, double commission, double salary) {
-        this.name = name;
-        this.staffID = staffID;
-        this.totalHourWorks = totalHourWorks;
-        this.commission = commission;
-        this.salary = salary;
-    }*/
-      
+  
     public void setStaff(String nm,String id,int hWorks,double  sales,double salary){
         name = nm;
         staffID = id;
