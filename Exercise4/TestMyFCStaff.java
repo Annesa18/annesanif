@@ -1,8 +1,5 @@
 package testmyfcstaff;
-/**
- *
- * @author nurul annesa
- */
+
 import java.util.Scanner;
 public class TestMyFCStaff {
 
@@ -23,7 +20,8 @@ public class TestMyFCStaff {
         sales = in.nextDouble();
         System.out.println("Enter your hour works:");
         hourWorks = in.nextInt();
-     
+       
+        //invoked method
         fc.setStaff(name,staffID,hourWorks,sales,salary);
         fc.calculateSalary();
         fc.calculateCommission();
@@ -35,7 +33,8 @@ public class TestMyFCStaff {
     private String name,staffID;
     private int totalHourWorks;
     private double sales,salary,commission,totalSales;
-  
+   
+     //constructer
     public void setStaff(String nm,String id,int hWorks,double  sales,double salary){
         name = nm;
         staffID = id;
@@ -94,7 +93,7 @@ public class TestMyFCStaff {
         System.out.println("Staff Name : " + name);
         System.out.println("StaffID : " + staffID);
         System.out.println("Hours Work : " + totalHourWorks);
-        System.out.println("Total sales : " + "RM" + commission);
+        System.out.println("Total sales : " + "RM" + commission * sales);
         System.out.println("Total Salary : " + "RM" +salary);
         System.out.println("------------------");
         
