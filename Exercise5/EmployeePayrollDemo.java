@@ -31,7 +31,8 @@ class Employee {
     private String idNum;
     private double grossPay,fedTax,stateTax;
     private double tFedTax,tStateTax,totalNetPay;
-        
+    
+    //create constructer
     public void Employee (String idNum ,double fedTax,double stateTax,double gPay){
         this.idNum =idNum;
         this.fedTax = fedTax;
@@ -85,7 +86,8 @@ class Employee {
     private double tFedTax,tStateTax,totalNetPay;
     
     public void calculateNetPay(){
-        
+        tFedTax = grossPay * fedTax;
+        tStateTax = grossPay * stateTax;
         totalNetPay = grossPay - (tFedTax+ tStateTax);
     }
     
