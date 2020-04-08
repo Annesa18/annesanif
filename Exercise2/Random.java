@@ -4,9 +4,9 @@ import java.util.concurrent.ThreadLocalRandom;
 import java.util.Scanner;
 public class Random{ // to show Random class
    public static void main (String []args){ //main method
-      Scanner in = new Scanner (System.in); //using scanner 
-      int first,second;  //declare first and second are integer
-      int count =0;  //declare count is integer and value is 0
+      Scanner in = new Scanner (System.in); 
+      int first,second;  
+      int count =0;  
       
       //input first and second number
       System.out.println("Enter the first number:");
