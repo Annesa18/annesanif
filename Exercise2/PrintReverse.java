@@ -1,6 +1,5 @@
- public class PrintReverse   
-{    
-    public static void main(String[] args) { //main method    
+ public class PrintReverse   {    
+    public static void main(String[] args) {     
         String string = "Welcome back";//Stores the reverse of given string    
         String reversedStr = ""; //declare reversedstr is string   
             
