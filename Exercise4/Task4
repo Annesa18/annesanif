@@ -57,7 +57,11 @@ public class TestMyFCStaff_Question4{
         return commission;
     }
     
-    public String toString() { 
-        return "Staff Name : " +name + " " +"\nStaffID : " + staffID + " " +"\nHours Work : " + hourWorks + " " +"\nTotal sales : " + "RM" + sales + " " +"\nTotal Salary : " + "RM" + calculateSalary(); 
-    }  
+   public String toString() { 
+        return "\nStaff Name : " +name  
+                +"\nStaffID : " + staffID 
+                +"\nHours Work : " + hourWorks 
+                +"\nTotal sales : " + "RM" + sales 
+                +"\nTotal Salary : " + "RM" + calculateSalary(); 
+    } 
  }
