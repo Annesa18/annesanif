@@ -1,26 +1,21 @@
 package testtriangle;
-/**
- *
- * @author nurul annesa
- */
+
 import java.util.Scanner;
 public class TestTriangle {
 
         public static void main(String[] args) {
-        
-        double height,base;
         Scanner in = new Scanner (System.in);
       
-        System.out.println("Enter the height:");
-        height = in.nextDouble();
-        System.out.println("Enter the base:"); 
-        base = in.nextDouble();
+        System.out.print("Enter the height:");
+        double height = in.nextDouble();
+        System.out.print("Enter the base:"); 
+        double base = in.nextDouble();
       
-        Triangle t = new Triangle ();
-        t.set(height,base);
-        t.calculateArea();
-        t.displayTotalArea();
-      }
+        Triangle t = new Triangle ();//create a Triangle object
+        t.set(height,base);//set height and base (use mutator)
+                
+        //display the area (use accessor)
+        System.out.println("Area of triangle:" + t.getArea());      }
   }
   
   
@@ -69,20 +64,7 @@ public class TestTriangle {
       // The getArea method returns the value of area
       // with formula : 0.5 * height * base
 
-      public void calculateArea(){
-          totalArea = 0.5 * height * base;
-      }
-
        public double getArea(){
-          return totalArea;
+          return 0.5 * height * base;
       }
-      
-      public void displayTotalArea(){
-         System.out.println("Area of triangle:" + totalArea);
-      } 
-}
-
-    
-   
-       
-   
+  }
