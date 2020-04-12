@@ -78,11 +78,8 @@ public class TriangleDemo
 
      // The getArea method returns the value of area
     // with formula : 0.5 * height * base
-      public void calculateArea(){
-          totalArea = 0.5 * height * base;
-      }
-
-       public double getArea(){
-          return totalArea;
-      }
+    
+      public double getArea(){
+          return 0.5 * height * base;
+     }
 }
