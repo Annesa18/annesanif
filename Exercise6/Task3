@@ -1,0 +1,56 @@
+package testaverage;
+
+import java.util.Scanner;
+public class TestAverage {
+
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner (System.in);
+        
+        System.out.print("Enter number 1:");
+        int w =input.nextInt();
+        System.out.print("\nEnter number 2:");
+        int x =input.nextInt();
+        System.out.print("\nEnter number 3:");
+        int y=input.nextInt();
+        System.out.print("\nEnter number 4:");
+        int z =input.nextInt();
+        
+        Average av = new Average();//create object
+        
+        //invoked method 
+        av.AverageMethod1(w,x,y);
+        av.AverageMethod2(w,x,y,z);
+        
+        //av.displayAverage();
+        System.out.println("Total Average of method 1:" + av.getTotalAverage1());
+        System.out.println("Total Average of method 2:" + av.getTotalAverage2());
+    }
+}
+
+public class Average {
+    private int w,x,y,z;
+    
+    //create constructor method1
+    public void AverageMethod1(int w,int x,int y){
+        this.w = w ;
+        this.x = x;
+        this.y= y;
+    }
+    
+    //create constructor method2
+    public void AverageMethod2(int w,int x,int y,int z){
+        this.w = w ;
+        this.x = x;
+        this.y= y;
+        this.z= z;
+    }
+   
+    public int getTotalAverage1(){
+        return (w+x+y)/3;
+    }
+    
+    public int getTotalAverage2(){
+        return (w+x+y+z)/4;
+    }
+}
