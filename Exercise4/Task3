@@ -1,8 +1,5 @@
 package teststaff;
-/**
- *
- * @author nurul annesa
- */
+
 import java.util.Scanner;
 public class TestStaff {
 
@@ -80,8 +77,4 @@ public class TestStaff {
     }
 
 }
-
-
-      
-      
-      
+    
