@@ -1,0 +1,73 @@
+package employeepayrolldemo;
+
+import java.util.Scanner;
+public class EmployeePayrollDemo {
+    public static void main(String[] args) {
+        
+        String idNum;
+        double grossPay,fedTax,stateTax;
+        
+        Scanner input = new Scanner (System.in);
+        System.out.print("Enter the employee's ID Number:");
+        idNum = input.nextLine();
+        System.out.print("Enter the employee's gross pay:" + "RM");
+        grossPay = input.nextDouble();
+        System.out.print("Enter the Federal Tax:"+ "RM");
+        fedTax = input.nextDouble();
+        System.out.print("Enter the State Tax:"+ "RM");
+        stateTax = input.nextDouble();
+        
+        Employee e = new Employee();
+        EmployeePayroll payroll = new EmployeePayroll();
+        //display output
+        e.Employee(idNum,fedTax,stateTax,grossPay);
+        payroll.calculateNetPay(e);
+        payroll.printOutput();
+   }
+    
+}
+
+class Employee {
+    
+    private String idNum;
+    private double grossPay,fedTax,stateTax;
+    private double tFedTax,tStateTax;
+        
+    public void Employee (String idNum ,double fedTax,double stateTax,double gPay){
+        this.idNum =idNum;
+        this.fedTax = fedTax;
+        this.stateTax = stateTax;
+        grossPay = gPay;
+        
+    }
+    public String getIdNum (){
+        return idNum;
+    }
+    
+    public double getGrossPay(){
+        return grossPay;
+    }
+    
+    public double getFederalTax(){
+        return fedTax;
+    }
+    
+    public double getStateTax(){
+        return stateTax;
+    }
+}
+
+ class EmployeePayroll {
+    private double netPay;
+    
+    public double calculateNetPay(Employee e){
+        netPay = e.getGrossPay() - (e.getFederalTax()+ e.getStateTax());
+        return netPay;
+    }
+    
+    public void printOutput(){
+        System.out.println("\nNet pay:" + "RM" + netPay);
+    }
+}
+
+
