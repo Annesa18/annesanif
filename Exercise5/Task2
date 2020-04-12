@@ -18,7 +18,6 @@ public class TriangleDemo
    
       //Set the height and base (use mutator) 
       tr.set(height,base);
-      tr.calculateArea();
       
       // Display the height, base and area (use accessor)
       System.out.println("The pyramid's height is " + tr.getHeight());
@@ -27,7 +26,6 @@ public class TriangleDemo
       
    }
 }
-
 
 // The Triangle class stores and manipulates data for a //triangle. 
  class Triangle {
