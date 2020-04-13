@@ -22,6 +22,7 @@ public class TestAverage {
         av.AverageMethod1(w,x,y);
         av.AverageMethod2(w,x,y,z);
         
+        //display average method
         System.out.println("Total Average of method 1:" + av.getTotalAverage1());
         System.out.println("Total Average of method 2:" + av.getTotalAverage2());
     }
