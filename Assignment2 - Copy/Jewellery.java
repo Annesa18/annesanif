@@ -1,8 +1,5 @@
 package Jewellery;
-/**
- *
- * @author nurul annesa
- */
+
 class Jewellery {
     
     //using setter method
