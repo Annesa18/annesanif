@@ -7,7 +7,7 @@ Questions:
     
 • What is meant by polymorphism ?
 
-  Polymorphism is the ability of any data to be processed in more than one form
+  Polymorphism is the ability of any data to be processed in more than one form.
   Its also a property through which any message can be sent to objects of multiple classes, 
   and every object has the tendency to respond in an appropriate way depending on the class properties.
 
