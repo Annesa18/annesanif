@@ -1,0 +1,50 @@
+Questions:
+• What will be the output when running the above code?
+
+    Meow.I am a cat. My name is Kurre.
+    Woof.I am a dog. My name is Vilma.
+    Meow.I am a cat. My name is Bamse.
+    
+• What is meant by polymorphism ?
+
+  Polymorphism is the ability of any data to be processed in more than one form
+  Its also a property through which any message can be sent to objects of multiple classes, 
+  and every object has the tendency to respond in an appropriate way depending on the class properties.
+
+• How does polymorphism work in the above program?
+
+  An animals at the same time can have different roles to play in life. Like a cat at the name is Kurre, Basme, and others. while dog is  
+  So the same animals has to have many features but has to implement each as per the situation and the condition.
+  
+• The method introduceYourself of Animal appears to be never called? Why not?
+
+  cause its overriding
+  
+• Comment out the method introduceYourself in Dog. What happens now when you run the program?
+
+   Woof.I am a dog. My name is Vilma. 
+   
+• Where is the name stored for the instances of Cat and Dog? 
+(In what / which classes did you put the instance variable that refers to the name of the animal? Both Cat and Dog, or just in Animal?)
+
+  i put the name stored in both class which is cat and dog for instances of them.
+  
+• How does the code in the test program work?
+
+  First, it made an array called animals and set the array size to 3.
+  second,fill the array wuth calling dog and cat classes with their name in the constructer.
+  then, initialize integer i as zero.
+  when i is less than the length of animals array. it will call the method in introduceYourself() in each Animals child class array. then, Add +1 to i.
+  next, repeat until value of i is greater than the length of the animals array then stop.
+  
+• How does an array work?
+
+  when i is less than the length of animals array. it will call the method in introduceYourself() in each Animals child class array. then, Add +1 to i.
+  next, repeat until value of i is greater than the length of the animals array then stop.
+  
+• In the above programs we have used a while loop to step through the array and to get information about the animals.
+But there is a more appropriate loop statement here.What is it?
+
+  for loop 
+    for(int i=0; i<animals.length; i++);
+  
