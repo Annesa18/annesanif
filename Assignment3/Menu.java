@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package test;
 
 import java.io.IOException;
@@ -11,10 +6,6 @@ import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
-/**
- *
- * @author nurul annesa
- */
 public class Menu extends javax.swing.JFrame {
 
     ArrayList<Jewellery> jList;
@@ -304,11 +295,6 @@ public class Menu extends javax.swing.JFrame {
         addTxt.setText(null);
     }
 
-    /*private void RadioButton (){
-        buttonGroup1.add(necklace); 
-        buttonGroup1.add(bracelet);
-        buttonGroup1.add(ring);
-    }*/
     private void jButtonAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAddActionPerformed
         // TODO add your handling code here:
         String name = nameTxt.getText();
@@ -324,18 +310,6 @@ public class Menu extends javax.swing.JFrame {
         }
         clearField(); //reset
 
-        /*//exception handling 
-        String Jewellery = "Jewellery Info:" + "" + nameTxt.getText() + "" + icTxt.getText() + "" + mTxt.getText() + "" + addTxt.getText() + "" + jComboBox1.getSelectedItem();
-        byte[] info = Jewellery.getBytes();
-
-        if (jComboBox1.getSelectedItem().equals("Necklace")) {
-            try {
-                RandomAccessFile file = new RandomAccessFile("Necklace.txt", "rw");
-                file.write(info);
-            } catch (IOException ex) {
-                ex.printStackTrace();
-            }
-        }*/
     }//GEN-LAST:event_jButtonAddActionPerformed
 
     private void jButtonDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonDeleteActionPerformed
@@ -379,28 +353,6 @@ public class Menu extends javax.swing.JFrame {
         // TODO add your handling code here:
 
         String input = JOptionPane.showInputDialog(this, "Search Name:");
-        /*try {
-
-        } catch (Exception e) {
-            for (int i = 0; i < jList.size(); i++) {
-                if (jList.get(i).name.equalsIgnoreCase(input)) {
-                    JOptionPane.showMessageDialog(jButtonSearch, "Your list is Found!", "Search", 2);
-                    nameTxt.setText(jList.get(i).name);
-                    icTxt.setText(jList.get(i).ic);
-                    mTxt.setText(jList.get(i).mPhone);
-                    addTxt.setText(jList.get(i).address);
-                    String location = jList.get(i).type;
-                    for (int j = 0; j < (jComboBox1.getItemCount()); j++) {
-                        if (jComboBox1.getItemAt(i).equalsIgnoreCase(location)) {
-                            jComboBox1.setSelectedIndex(i);
-                        }
-                    }
-                    return; // Quit after found
-
-                }
-            }
-            JOptionPane.showMessageDialog(jButtonSearch, "Sorry your list is not found!", "Search", 2);
-        }*/
         for (int i = 0; i < jList.size(); i++) {
             if (jList.get(i).name.equalsIgnoreCase(input)) {
                 JOptionPane.showMessageDialog(jButtonSearch, "Your list is Found!", "Search", 2);
@@ -495,27 +447,6 @@ public class Menu extends javax.swing.JFrame {
     private void savebtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_savebtnActionPerformed
         // TODO add your handling code here:
         //exception handling 
-        //String type = "Jewellery user Info:" + "" + nameTxt.getText() + "" + icTxt.getText() + "" + mTxt.getText() + "" + addTxt.getText() + "" + jComboBox1.getSelectedItem();
-        /*String name = nameTxt.getText();
-        String ic = icTxt.getText();
-        String m = mTxt.getText();
-        String add = addTxt.getText();
-        Object type = jComboBox1.getSelectedItem();
-        //String input = "Jewellery user Info:" + "" + nameTxt.getText() + "" + icTxt.getText() + "" + mTxt.getText() + "" + addTxt.getText() + "" + jComboBox1.getSelectedItem();
-        //byte[] info = input.getBytes(); 
-        
-        try{
-            RandomAccessFile file = new RandomAccessFile("JewelleryInfo.txt", "rw");
-            System.out.println("JEWELLERY INFO:");
-            file.writeBytes(nameTxt.getText());
-            file.writeBytes(icTxt.getText());
-            file.writeBytes(mTxt.getText());
-            file.writeBytes(addTxt.getText());
-            file.writeBytes((String) type);
-            //file.writeBytes(input); 
-        }catch(IOException ex){
-            JOptionPane.showMessageDialog(this,"Your saving is failed.");
-         */
         String type = "Jewellery user Info:" + "" + nameTxt.getText() + "" + icTxt.getText() + "" + mTxt.getText() + "" + addTxt.getText() + "" + jComboBox1.getSelectedItem();
         byte[] info = type.getBytes();
 
