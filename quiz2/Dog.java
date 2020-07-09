@@ -2,7 +2,6 @@ package quiz;
 
 public class Dog extends Animals {
 
-   
     String name;
 
     Dog(String vilma) {
