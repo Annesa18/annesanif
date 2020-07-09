@@ -7,11 +7,14 @@ Questions:
   and I am 3 years old.
   
 2. Explain how it is that the instance variable age of Animal can be used in Cat and Dog when it is declared in Animal.
+    class Cat and Dog are extends from Animals. so both of class will instance variable age from Animals class.
     
 3. What actually consists an instance of?
-
+   consists an instance of variable in their each class.
+   
 4. And what consists a class of?
-
+   consists a class of fields and methods to describe the behavior of an object.
+   
 5. What is the difference between a class and an instance?
    A class is a blueprint which you use to create objects. An object is an instance of a class - it's a concrete 'thing' that you made using a specific class. 
    So, 'object' and 'instance' are the same thing, but the word 'instance' indicates the relationship of an object to its class.
