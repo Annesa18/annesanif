@@ -1,0 +1,36 @@
+Questions:
+1. What will be printed?
+
+  Meow.I am a cat. My name is Kurre.
+  and I am 6 years old.
+  Woof.I am a dog. My name is Vilma.
+  and I am 3 years old.
+  
+2. Explain how it is that the instance variable age of Animal can be used in Cat and Dog when it is declared in Animal.
+
+3. What actually consists an instance of?
+
+4. And what consists a class of?
+
+5. What is the difference between a class and an instance?
+   A class is a blueprint which you use to create objects. An object is an instance of a class - it's a concrete 'thing' that you made using a specific class. 
+   So, 'object' and 'instance' are the same thing, but the word 'instance' indicates the relationship of an object to its class.
+  
+6. Change the declaration of the instance variable age of Animal to a class variable using static, in this way:
+   public static int age;  
+   What is the result of the output now? Why?
+  
+    Meow.I am a cat. My name is Kurre.
+    and I am 3 years old.
+    Woof.I am a dog. My name is Vilma.
+    and I am 3 years old.
+
+7. It may happen that you get warnings from the compiler that you should access the variable age via Animal.age,
+   but it should be possible to run the program anyway. Otherwise, change the references to age into Animal.age.
+
+8. Where is the value of an instance variable stored?
+  
+9. Where is the value of a class variable stored?
+  
+10.What refers the variable this to?
+    The keyword this refers to the class itself.
