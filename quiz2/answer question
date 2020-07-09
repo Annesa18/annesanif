@@ -7,7 +7,7 @@ Questions:
   and I am 3 years old.
   
 2. Explain how it is that the instance variable age of Animal can be used in Cat and Dog when it is declared in Animal.
-
+    
 3. What actually consists an instance of?
 
 4. And what consists a class of?
@@ -29,8 +29,10 @@ Questions:
    but it should be possible to run the program anyway. Otherwise, change the references to age into Animal.age.
 
 8. Where is the value of an instance variable stored?
-  
+    it will be stored in the class itself where the variable was defined.
+    
 9. Where is the value of a class variable stored?
+  the value of a class variable will be stored inside a property of the class object.
   
 10.What refers the variable this to?
-    The keyword this refers to the class itself.
+    The keyword this refers to the variable in the class.
